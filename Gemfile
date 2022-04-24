@@ -29,9 +29,12 @@ gem 'bulma-rails', '~> 0.9.3'
 gem 'simple_form', '~> 5.1'
 gem 'gravatar_image_tag', '~> 1.2'
 gem 'devise', '~> 4.8', '>= 4.8.1'
-
+gem 'omniauth-twitter'
+gem 'omniauth-rails_csrf_protection'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
+
+gem 'omniauth-github', github: 'omniauth/omniauth-github', branch: 'master'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
