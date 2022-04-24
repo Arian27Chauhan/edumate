@@ -13,8 +13,9 @@
                 <div class="media-content">
                     <div class="content">
                         <p>
-                            <strong>John Doe</strong>
-                            <small>@johndoe</small>
+                        <% @user = User.find(User.pluck(:id).sample) %>
+                            <strong><%=@user.name%></strong>
+                            <small>@<%= @user.username%></small>
                         </p>
                     </div>
                 </div>
@@ -30,8 +31,9 @@
                 <div class="media-content">
                     <div class="content">
                         <p>
-                            <strong>John Doe</strong>
-                            <small>@johndoe</small>
+                        <% @user = User.find(User.pluck(:id).sample) %>
+                            <strong><%=@user.name%></strong>
+                            <small>@<%= @user.username%></small>
                         </p>
                     </div>
                 </div>
@@ -47,8 +49,9 @@
                 <div class="media-content">
                     <div class="content">
                         <p>
-                            <strong>John Doe</strong>
-                            <small>@johndoe</small>
+                        <% @user = User.find(User.pluck(:id).sample) %>
+                            <strong><%=@user.name%></strong>
+                            <small>@<%= @user.username%></small>
                         </p>
                     </div>
                 </div>
